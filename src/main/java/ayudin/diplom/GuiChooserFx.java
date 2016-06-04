@@ -178,8 +178,8 @@ public final class GuiChooserFx extends Application {
     }
 
     private String makeQueryName(String query){
-        //todo
-        return query.substring(0, 10);
+        //до первого пробела после 15-го символа
+        return query.substring(0, query.indexOf(" ", 15));
     }
     public static void main(String[] args) {
         Application.launch(args);
