@@ -66,13 +66,18 @@ public final class GuiChooserFx extends Application {
         final FileChooser fileChooser = new FileChooser();
         final Button openButton = new Button("Открыть файл логов");
         final Button fireButton = new Button("Создать XML-файл");
+        final Button settingsButton = new Button("Указать файл конфигурации");
+        Label patternLabel = new Label("Шаблон журналирования");
+        final TextField patternField = new TextField();
+        patternField.setMinWidth(400);
+        patternField.setText("%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n");
 
         openButton.setOnAction(
                 new EventHandler<ActionEvent>() {
                     public void handle(final ActionEvent e) {
                         File file = fileChooser.showOpenDialog(stage);
                         if (file != null) {
-                            queries = queriesModifier.getModifiedQueries(logParser.getSqlQueries(file));
+                            queries = queriesModifier.getModifiedQueries(logParser.getSqlQueries(file, patternField.getText()));
                             displayQueries();
                         }
                     }
@@ -95,13 +100,26 @@ public final class GuiChooserFx extends Application {
                 });
 
 
+        settingsButton.setOnAction(
+                new EventHandler<ActionEvent>() {
+                    public void handle(final ActionEvent e) {
+
+                    }
+                });
+
+
         final GridPane inputGridPane = new GridPane();
 
         GridPane.setConstraints(openButton, 0, 0);
         GridPane.setConstraints(fireButton, 1, 0);
+        GridPane.setConstraints(settingsButton, 2, 0);
+        GridPane.setConstraints(patternLabel, 0, 1);
+        patternLabel.setMinWidth(180);
+        GridPane.setConstraints(patternField, 0, 2);
+        //todo я слишком пьян, но надо сделать чтоб кнопки не уезжали из-за размера поля паттерна @рюмочная 05.06.16
         inputGridPane.setHgap(6);
         inputGridPane.setVgap(6);
-        inputGridPane.getChildren().addAll(openButton, fireButton);
+        inputGridPane.getChildren().addAll(openButton, fireButton, settingsButton, patternLabel, patternField);
 
         final Pane rootGroup = new VBox(12);
         rootGroup.getChildren().addAll(inputGridPane);
@@ -158,7 +176,7 @@ public final class GuiChooserFx extends Application {
         Scene scene = new Scene(rootGroup);
 
         stage.setScene(scene);
-        stage.setWidth(500);
+        stage.setWidth(700);
         stage.setHeight(800);
         stage.show();
     }

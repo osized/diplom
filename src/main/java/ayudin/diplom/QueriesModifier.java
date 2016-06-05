@@ -37,11 +37,38 @@ public class QueriesModifier {
 
     private String addParams(String query, List<List<String>> groupedParams){
         int paramCount = query.length() - query.replace("?", "").length();
-        if (groupedParams.size() != paramCount) throw new RuntimeException("Wrong param count!");
+
+        //Если число групп не равно числу параметров - ничего не подставлять
+        if (groupedParams.size() != paramCount) return query;
+
         String result = query;
+        int paramsInFirstGroup = groupedParams.get(0).size();
         for (List<String> paramsGroup: groupedParams){
-            //todo: тут сделать алгоритм подстановки параметров. Пока подставляется первый параметр из группы
-            result.replaceFirst("\\?", paramsGroup.get(0));
+            //Если в группах разное число параметров - ничего не подставлять
+            if (paramsGroup.size() != paramsInFirstGroup) return query;
+
+            Pattern intPattern = Pattern.compile("\\A(\\d+)\\Z");
+            if (intPattern.matcher(paramsGroup.get(0)).find()){
+                Integer min = Integer.MAX_VALUE;
+                Integer max = Integer.MIN_VALUE;
+                for (String param: paramsGroup){
+                    Integer intParam = 0;
+                    try {
+                        intParam = Integer.parseInt(param);
+                    } catch (NumberFormatException e){
+                        //Не все параметры в группе инты - ничего не подставляем
+                        return query;
+                    }
+                    if (min > intParam) min = intParam;
+                    if (max < intParam) max = intParam;
+                }
+                //todo
+                result = result.replaceFirst("\\?", min + " - " + max);
+
+            } else{
+                //// TODO: 05.06.16
+                result = result.replaceFirst("\\?","RandomString");
+            }
         }
         return result;
     }

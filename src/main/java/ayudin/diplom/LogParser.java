@@ -13,7 +13,11 @@ import java.util.regex.Pattern;
  */
 public class LogParser {
 
-    public Map<String, List<List<String>>> getSqlQueries(File logfile){
+    //default log4j pattern
+    String loggingPattern = "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n";
+
+    public Map<String, List<List<String>>> getSqlQueries(File logfile, String pattern){
+        if (pattern.length() != 0 ) loggingPattern = pattern;
 
         BufferedReader reader;
         ArrayList<String> logLines = new ArrayList<String>();
@@ -30,6 +34,7 @@ public class LogParser {
         }
 
         Map<String, List<List<String>>> results = new HashMap();
+        //todo добавить паттерн
         String queryRegexp = "(select|update|insert|delete) (\\w+\\.\\w+ \\*\\/) (.*)";
         String paramsRegexp = "binding parameter \\[\\d+\\] as \\[\\S+\\] - \\[(.+)\\]";
         Pattern queryPattern = Pattern.compile(queryRegexp);

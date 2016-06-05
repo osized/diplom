@@ -117,7 +117,7 @@
 2016-05-29 16:20:49 ///// SQL:92 - /* update Entities.Person */ update Person set description=?, person_name=? where id=?
 2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [///Description of Vasya]
 2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [///Vasiliy]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [///21]
+2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [1000]
 2016-05-29 16:20:49 DEBUG SQL:92 - /* delete one-to-many Entities.Person.pets */ update Pet set person_id=null where person_id=?
 2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [21]
 2016-05-29 16:20:49 DEBUG SQL:92 - /* from Pet */ select pet0_.id as id1_1_, pet0_.name as name2_1_, pet0_.person_id as person_i3_1_ from Pet pet0_
@@ -127,4 +127,4 @@
 2016-05-29 16:20:49 !!!!! SQL:92 - /* update Entities.Person */ update Person set description=?, person_name=? where id=?
 2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [!!!!Description of Vasya]
 2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [!!!!Vasiliy]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [!!!!21]
+2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [9]
