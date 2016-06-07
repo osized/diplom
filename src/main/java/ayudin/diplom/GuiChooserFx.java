@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
@@ -103,7 +104,15 @@ public final class GuiChooserFx extends Application {
         settingsButton.setOnAction(
                 new EventHandler<ActionEvent>() {
                     public void handle(final ActionEvent e) {
-
+                        File file = fileChooser.showOpenDialog(stage);
+                        if (file != null) {
+                            try {
+                                patternField.setText(logParser.extractPattern(file));
+                            } catch (Exception exception){
+                                System.out.println("Неверный формат файла конфигурации");
+                                exception.printStackTrace();
+                            }
+                        }
                     }
                 });
 
@@ -113,16 +122,20 @@ public final class GuiChooserFx extends Application {
         GridPane.setConstraints(openButton, 0, 0);
         GridPane.setConstraints(fireButton, 1, 0);
         GridPane.setConstraints(settingsButton, 2, 0);
-        GridPane.setConstraints(patternLabel, 0, 1);
-        patternLabel.setMinWidth(180);
-        GridPane.setConstraints(patternField, 0, 2);
-        //todo я слишком пьян, но надо сделать чтоб кнопки не уезжали из-за размера поля паттерна @рюмочная 05.06.16
+
         inputGridPane.setHgap(6);
         inputGridPane.setVgap(6);
-        inputGridPane.getChildren().addAll(openButton, fireButton, settingsButton, patternLabel, patternField);
+        inputGridPane.getChildren().addAll(openButton, fireButton, settingsButton);
+
+        final GridPane patternGridPane = new GridPane();
+        GridPane.setConstraints(patternLabel, 0, 0);
+        patternLabel.setMinWidth(180);
+        GridPane.setConstraints(patternField, 0, 1);
+        patternGridPane.getChildren().addAll(patternLabel, patternField);
 
         final Pane rootGroup = new VBox(12);
         rootGroup.getChildren().addAll(inputGridPane);
+        rootGroup.getChildren().addAll(patternGridPane);
         rootGroup.setPadding(new Insets(12, 12, 12, 12));
 
         TableView table = new TableView();

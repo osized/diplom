@@ -1,5 +1,11 @@
 package ayudin.diplom;
 
+
+
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.input.SAXBuilder;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -73,8 +79,22 @@ public class LogParser {
             }
 
         }
-
         return results;
+    }
+
+    public String extractPattern(File config) throws Exception{
+        String result = "";
+        SAXBuilder builder = new SAXBuilder();
+        builder.setFeature(
+                "http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+        Document document = (Document) builder.build(config);
+        Element rootNode = document.getRootElement();
+        Element appender = rootNode.getChild("appender");
+        Element layout = appender.getChild("layout");
+        Element param = layout.getChild("param");
+        result = param.getAttributeValue("value");
+        return result;
     }
 
 }
