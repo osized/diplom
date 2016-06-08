@@ -5,10 +5,13 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 import javafx.application.Application;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,6 +20,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -32,6 +36,23 @@ public final class GuiChooserFx extends Application {
     private LogParser logParser = new LogParser();
     private QueriesModifier queriesModifier = new QueriesModifier();
     private XmlGenerator xmlGenerator = new XmlGenerator();
+
+    private IntegerProperty index = new SimpleIntegerProperty();
+
+
+    public final double getIndex() {
+        return index.get();
+    }
+
+
+    public final void setIndex(Integer value) {
+        index.set(value);
+    }
+
+
+    public IntegerProperty indexProperty() {
+        return index;
+    }
 
     public static class Query {
 
@@ -68,10 +89,13 @@ public final class GuiChooserFx extends Application {
         final Button openButton = new Button("Открыть файл логов");
         final Button fireButton = new Button("Создать XML-файл");
         final Button settingsButton = new Button("Указать файл конфигурации");
+        final Button delButton = new Button("Удалить запрос");
+        delButton.setDisable(true);
         Label patternLabel = new Label("Шаблон журналирования");
         final TextField patternField = new TextField();
         patternField.setMinWidth(400);
         patternField.setText("%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n");
+
 
         openButton.setOnAction(
                 new EventHandler<ActionEvent>() {
@@ -122,10 +146,11 @@ public final class GuiChooserFx extends Application {
         GridPane.setConstraints(openButton, 0, 0);
         GridPane.setConstraints(fireButton, 1, 0);
         GridPane.setConstraints(settingsButton, 2, 0);
+        GridPane.setConstraints(delButton, 3, 0);
 
         inputGridPane.setHgap(6);
         inputGridPane.setVgap(6);
-        inputGridPane.getChildren().addAll(openButton, fireButton, settingsButton);
+        inputGridPane.getChildren().addAll(openButton, fireButton, settingsButton, delButton);
 
         final GridPane patternGridPane = new GridPane();
         GridPane.setConstraints(patternLabel, 0, 0);
@@ -138,11 +163,10 @@ public final class GuiChooserFx extends Application {
         rootGroup.getChildren().addAll(patternGridPane);
         rootGroup.setPadding(new Insets(12, 12, 12, 12));
 
-        TableView table = new TableView();
+        final TableView table = new TableView();
 
         final Label label = new Label("Запросы");
         label.setFont(new Font("Arial", 20));
-        table.setEditable(true);
         table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         TableColumn queryName = new TableColumn("Название запроса");
         TableColumn queryBody = new TableColumn("Тело запроса");
@@ -158,6 +182,56 @@ public final class GuiChooserFx extends Application {
         queryBody.setPrefWidth(250);
         table.setItems(tableQueries);
         table.getColumns().addAll(queryName, queryBody);
+
+
+        table.setEditable(true);
+        queryName.setCellFactory(TextFieldTableCell.forTableColumn());
+        queryName.setOnEditCommit(
+                new EventHandler<TableColumn.CellEditEvent<Query, String>>() {
+                    public void handle(TableColumn.CellEditEvent<Query, String> t) {
+                        ((Query) t.getTableView().getItems().get(
+                                t.getTablePosition().getRow())
+                        ).setName(t.getNewValue());
+                    }
+                }
+        );
+
+        queryBody.setCellFactory(TextFieldTableCell.forTableColumn());
+        queryBody.setOnEditCommit(
+                new EventHandler<TableColumn.CellEditEvent<Query, String>>() {
+                    public void handle(TableColumn.CellEditEvent<Query, String> t) {
+                        ((Query) t.getTableView().getItems().get(
+                                t.getTablePosition().getRow())
+                        ).setName(t.getNewValue());
+                    }
+                }
+        );
+
+
+        table.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
+
+            public void changed(ObservableValue observable, Object oldvalue, Object newValue) {
+                delButton.setDisable(false);
+                setIndex(tableQueries.indexOf(newValue));
+
+            }
+        });
+
+        delButton.setOnAction(new EventHandler<ActionEvent>() {
+
+
+            public void handle(ActionEvent e) {
+
+                tableQueries.remove(index.get());
+                table.getSelectionModel().clearSelection();
+                delButton.setDisable(true);
+
+            }
+        });
+
+
+
+
         final VBox vbox = new VBox();
         vbox.setSpacing(5);
         vbox.setPadding(new Insets(10, 0, 0, 10));
