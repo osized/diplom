@@ -62,8 +62,7 @@ public class QueriesModifier {
                     if (min > intParam) min = intParam;
                     if (max < intParam) max = intParam;
                 }
-                //todo
-                result = result.replaceFirst("\\?", min + " - " + max);
+                result = result.replaceFirst("\\?", "@int" + min + "-" + max);
 
             } else{
                 //// TODO: 05.06.16
