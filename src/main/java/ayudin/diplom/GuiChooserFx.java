@@ -59,7 +59,7 @@ public final class GuiChooserFx extends Application {
         private final SimpleStringProperty name;
         private final SimpleStringProperty body;
 
-        private Query(String name, String body) {
+        Query(String name, String body) {
             this.name = new SimpleStringProperty(name);
             this.body = new SimpleStringProperty(body);
         }

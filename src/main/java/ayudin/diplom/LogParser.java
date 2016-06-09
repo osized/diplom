@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 public class LogParser {
 
     //default log4j pattern
-    String loggingPattern = "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n";
+    private String loggingPattern = "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n";
 
     public Map<String, List<List<String>>> getSqlQueries(File logfile, String pattern){
         if (pattern.length() != 0 ) loggingPattern = pattern;
