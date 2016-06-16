@@ -8,6 +8,6 @@ import java.io.File;
 public class Main {
 
     public static void main(String[] args) {
-        Utils.generateLog(500000, new File("Hibernate.log"));
+        Utils.generateLog(1000000, new File("Hibernate.log"));
     }
 }

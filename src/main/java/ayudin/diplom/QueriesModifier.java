@@ -1,6 +1,8 @@
 package ayudin.diplom;
 
 
+import ayudin.diplom.test.Utils;
+
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -11,6 +13,7 @@ import java.util.regex.Pattern;
 public class QueriesModifier {
 
     public List<String> getModifiedQueries(Map<String, List<List<String>>> queryToParameters){
+        Utils.setTimer("getModifiedQueries");
         List<String> results = new ArrayList<String>();
         Map<String, List<List<String>>> queryToGroupedParams = new HashMap<String, List<List<String>>>();
         for (Map.Entry<String, List<List<String>>> entry: queryToParameters.entrySet()){
@@ -21,10 +24,12 @@ public class QueriesModifier {
         for (String query: queryToGroupedParams.keySet()){
             results.add(addParams(query, queryToGroupedParams.get(query)));
         }
+        Utils.printTime("getModifiedQueries");
         return results;
     }
 
     private List<List<String>> groupParams(List<List<String>> paramsLists){
+        Utils.setTimer("groupParams");
         List<List<String>> results = new ArrayList<List<String>>();
         for (List<String> paramList: paramsLists){
             for (int i = 0; i<paramList.size(); i++){
@@ -32,6 +37,7 @@ public class QueriesModifier {
                 results.get(i).add(paramList.get(i));
             }
         }
+        Utils.printTime("groupParams");
         return results;
     }
 

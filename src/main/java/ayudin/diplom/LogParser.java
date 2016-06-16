@@ -2,6 +2,7 @@ package ayudin.diplom;
 
 
 
+import ayudin.diplom.test.Utils;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
@@ -23,6 +24,7 @@ public class LogParser {
     private String loggingPattern = "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n";
 
     public Map<String, List<List<String>>> getSqlQueries(File logfile, String pattern){
+        Utils.setTimer("getSqlQueries");
         if (pattern.length() != 0 ) loggingPattern = pattern;
 
         BufferedReader reader;
@@ -79,6 +81,7 @@ public class LogParser {
             }
 
         }
+        Utils.printTime("getSqlQueries");
         return results;
     }
 
