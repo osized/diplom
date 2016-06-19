@@ -18,6 +18,7 @@ public class XmlGenerator {
     //Уточнить
     private String queryName = "Query from Hibernate log";
     private String queryTypeConn = "1";
+    //todo: homepath
     private String queryNameConn = "C:\\Users\\Oleg\\connection.ini";
 
 

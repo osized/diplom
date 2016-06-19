@@ -72,7 +72,7 @@ public class QueriesModifier {
 
             } else{
                 //// TODO: 05.06.16
-                result = result.replaceFirst("\\?","RandomString");
+                result = result.replaceFirst("\\?","@str8-32");
             }
         }
         return result;
