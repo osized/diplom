@@ -42,10 +42,11 @@ public class LogParser {
         }
 
         Map<String, List<List<String>>> results = new HashMap();
-        //todo добавить паттерн
         String queryRegexp = "(select|update|insert|delete) (\\w+\\.\\w+ \\*\\/) (.*)";
+        String selectRegexp = "\\/\\* (from [^\\*\\/]*)";
         String paramsRegexp = "binding parameter \\[\\d+\\] as \\[\\S+\\] - \\[(.+)\\]";
         Pattern queryPattern = Pattern.compile(queryRegexp);
+        Pattern selectPattern = Pattern.compile(selectRegexp);
         Pattern paramsPattern = Pattern.compile(paramsRegexp);
 
         Iterator<String> logLinesIterator = logLines.iterator();
@@ -53,12 +54,23 @@ public class LogParser {
         String next = logLinesIterator.next();
         while (logLinesIterator.hasNext()) {
             Matcher queryMatcher = queryPattern.matcher(next);
+            Matcher selectMatcher = selectPattern.matcher(next);
+            boolean isSelect = false;
             if (!queryMatcher.find()){
-                next = logLinesIterator.next();
-                continue;
+                isSelect = true;
+                if (!selectMatcher.find()){
+                    next = logLinesIterator.next();
+                    continue;
+                }
             }
             ArrayList<String> params = new ArrayList<String>();
-            String extractedQuery = queryMatcher.group(3);
+
+            String extractedQuery;
+            if (!isSelect) {
+                extractedQuery = queryMatcher.group(3);
+            } else {
+                extractedQuery =  "select * " + selectMatcher.group(1);
+            }
 
             if (logLinesIterator.hasNext()) next = logLinesIterator.next();
             Matcher paramsMatcher = paramsPattern.matcher(next);

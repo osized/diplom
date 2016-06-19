@@ -45,7 +45,7 @@ public class QueriesModifier {
         int paramCount = query.length() - query.replace("?", "").length();
 
         //Если число групп не равно числу параметров - ничего не подставлять
-        if (groupedParams.size() != paramCount) return query;
+        if (groupedParams.size() != paramCount || paramCount == 0) return query;
 
         String result = query;
         int paramsInFirstGroup = groupedParams.get(0).size();
