@@ -15,7 +15,6 @@ import java.util.List;
  */
 public class XmlGenerator {
 
-    //Уточнить
     private String queryName = "Query from Hibernate log";
     private String queryTypeConn = "1";
     private String queryNameConn = System.getProperty("user.home") + System.getProperty("file.separator") + "connection.ini";
@@ -25,6 +24,7 @@ public class XmlGenerator {
         Element querylist = new Element("querylist");
 
         for (String sqlStatement: sqlStatements){
+            queryName = makeQueryName(sqlStatement);
             Element query = new Element("query");
 
             Element command = new Element("command");
@@ -51,5 +51,10 @@ public class XmlGenerator {
         Document doc = new Document(querylist);
         return new XMLOutputter().outputString(doc);
 
+    }
+
+    private String makeQueryName(String query){
+        //до первого пробела после 15-го символа
+        return query.substring(0, query.indexOf(" ", 15));
     }
 }

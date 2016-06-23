@@ -1,130 +1,613 @@
-2016-05-29 16:20:46 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@c46bcd4
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@c46bcd4
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@c46bcd4
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@37d31475
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2c039ac6
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6b57696f
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@26a7b76d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@26a7b76d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@26a7b76d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration character -> org.hibernate.type.CharacterType@29b5cd00
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration char -> org.hibernate.type.CharacterType@29b5cd00
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@29b5cd00
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@59906517
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@59906517
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@59906517
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration integer -> org.hibernate.type.IntegerType@44c8afef
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration int -> org.hibernate.type.IntegerType@44c8afef
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@44c8afef
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@5ed828d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@5ed828d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5ed828d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@3aeaafa6
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@3aeaafa6
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3aeaafa6
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@eafc191
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@eafc191
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@eafc191
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6a1aab78
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6a1aab78
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@66d1af89
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@66d1af89
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration string -> org.hibernate.type.StringType@6950e31
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.String -> org.hibernate.type.StringType@6950e31
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@192d3247
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@64f6106c
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration url -> org.hibernate.type.UrlType@8e24743
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@8e24743
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration date -> org.hibernate.type.DateType@51c8530f
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@51c8530f
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration time -> org.hibernate.type.TimeType@289d1c02
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@289d1c02
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration timestamp -> org.hibernate.type.TimestampType@a74868d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@a74868d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@a74868d
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@365185bd
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration calendar -> org.hibernate.type.CalendarType@1990a65e
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1990a65e
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1990a65e
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6ec8211c
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration locale -> org.hibernate.type.LocaleType@4524411f
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4524411f
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration currency -> org.hibernate.type.CurrencyType@43a0cee9
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@43a0cee9
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6eceb130
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6eceb130
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration class -> org.hibernate.type.ClassType@4d1b0d2a
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4d1b0d2a
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4cf4d528
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4cf4d528
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4c762604
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration binary -> org.hibernate.type.BinaryType@24a35978
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration byte[] -> org.hibernate.type.BinaryType@24a35978
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration [B -> org.hibernate.type.BinaryType@24a35978
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@27d415d9
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@27d415d9
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@27d415d9
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration image -> org.hibernate.type.ImageType@4fcd19b3
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration characters -> org.hibernate.type.CharArrayType@17211155
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration char[] -> org.hibernate.type.CharArrayType@17211155
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration [C -> org.hibernate.type.CharArrayType@17211155
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6fb0d3ed
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6fb0d3ed
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6fb0d3ed
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration text -> org.hibernate.type.TextType@24b1d79b
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration ntext -> org.hibernate.type.NTextType@103f852
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration blob -> org.hibernate.type.BlobType@382db087
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@382db087
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5427c60c
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration clob -> org.hibernate.type.ClobType@50de0926
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@50de0926
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration nclob -> org.hibernate.type.NClobType@130f889
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@130f889
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@101df177
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@276438c9
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration serializable -> org.hibernate.type.SerializableType@46238e3f
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration object -> org.hibernate.type.ObjectType@799d4f69
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@799d4f69
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@12028586
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@17776a8
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@69a10787
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2d127a61
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2bbaf4f0
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@11c20519
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@70beb599
-2016-05-29 16:20:47 DEBUG BasicTypeRegistry:135 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4e41089d
-2016-05-29 16:20:48 TRACE TypeFactory:58 - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@642a7222
-2016-05-29 16:20:49 DEBUG SQL:92 - create table Person (id integer not null, description varchar(255), person_name varchar(255), primary key (id))
-2016-05-29 16:20:49 DEBUG SQL:92 - create table Pet (id integer not null, name varchar(255) not null, person_id integer, primary key (id))
-2016-05-29 16:20:49 DEBUG SQL:92 - alter table Pet add constraint FK7sx5enfvdom1h3kq3wo0tcm65 foreign key (person_id) references Person (id)
-2016-05-29 16:20:49 DEBUG SQL:92 - select next_val as id_val from hibernate_sequence for update
-2016-05-29 16:20:49 DEBUG SQL:92 - update hibernate_sequence set next_val= ? where next_val=?
-2016-05-29 16:20:49 DEBUG SQL:92 - /* insert Entities.Person */ insert into Person (description, person_name, id) values (?, ?, ?)
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Description of Vasya]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Vasiliy]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [21]
-2016-05-29 16:20:49 DEBUG SQL:92 - select next_val as id_val from hibernate_sequence for update
-2016-05-29 16:20:49 DEBUG SQL:92 - update hibernate_sequence set next_val= ? where next_val=?
-2016-05-29 16:20:49 DEBUG SQL:92 - /* insert Entities.Pet */ insert into Pet (name, person_id, id) values (?, ?, ?)
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Bobique]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [INTEGER] - [21]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [22]
-2016-05-29 16:20:49 DEBUG SQL:92 - /* update Entities.Person */ update Person set description=?, person_name=? where id=?
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Description of Vasya]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Vasiliy]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [21]
-2016-05-29 16:20:49 ///// SQL:92 - /* update Entities.Person */ update Person set description=?, person_name=? where id=?
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [///Description of Vasya]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [///Vasiliy]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [1000]
-2016-05-29 16:20:49 DEBUG SQL:92 - /* delete one-to-many Entities.Person.pets */ update Pet set person_id=null where person_id=?
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [21]
-2016-05-29 16:20:49 DEBUG SQL:92 - /* from Pet */ select pet0_.id as id1_1_, pet0_.name as name2_1_, pet0_.person_id as person_i3_1_ from Pet pet0_
-2016-05-29 16:20:49 TRACE BasicExtractor:61 - extracted value ([id1_1_] : [INTEGER]) - [22]
-2016-05-29 16:20:49 TRACE BasicExtractor:61 - extracted value ([name2_1_] : [VARCHAR]) - [Bobique]
-2016-05-29 16:20:49 TRACE BasicExtractor:51 - extracted value ([person_i3_1_] : [INTEGER]) - [null]
-2016-05-29 16:20:49 !!!!! SQL:92 - /* update Entities.Person */ update Person set description=?, person_name=? where id=?
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [!!!!Description of Vasya]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [!!!!Vasiliy]
-2016-05-29 16:20:49 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [9]
+2016-06-24 01:29:51 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@1d8d30f7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@1d8d30f7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1d8d30f7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6b57696f
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@26a7b76d
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration yes_no -> org.hibernate.type.YesNoType@1500955a
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@6043cd28
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@6043cd28
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6043cd28
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration character -> org.hibernate.type.CharacterType@12cdcf4
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration char -> org.hibernate.type.CharacterType@12cdcf4
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@12cdcf4
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@7b69c6ba
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@7b69c6ba
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7b69c6ba
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration integer -> org.hibernate.type.IntegerType@1e7c7811
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration int -> org.hibernate.type.IntegerType@1e7c7811
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1e7c7811
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@76a3e297
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@76a3e297
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@76a3e297
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@612679d6
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@612679d6
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@612679d6
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@462d5aee
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@462d5aee
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@462d5aee
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6950e31
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6950e31
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@192d3247
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@192d3247
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration string -> org.hibernate.type.StringType@64f6106c
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.String -> org.hibernate.type.StringType@64f6106c
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@8e24743
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4e718207
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration url -> org.hibernate.type.UrlType@7403c468
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@7403c468
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration date -> org.hibernate.type.DateType@3891771e
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3891771e
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration time -> org.hibernate.type.TimeType@365185bd
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@365185bd
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration timestamp -> org.hibernate.type.TimestampType@25bbf683
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@25bbf683
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@25bbf683
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@544a2ea6
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration calendar -> org.hibernate.type.CalendarType@10dba097
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@10dba097
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@10dba097
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@43a0cee9
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration locale -> org.hibernate.type.LocaleType@6eceb130
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6eceb130
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration currency -> org.hibernate.type.CurrencyType@4d1b0d2a
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4d1b0d2a
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@481a15ff
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@481a15ff
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration class -> org.hibernate.type.ClassType@77846d2c
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@77846d2c
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2f0a87b3
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2f0a87b3
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@27d415d9
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration binary -> org.hibernate.type.BinaryType@4fcd19b3
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration byte[] -> org.hibernate.type.BinaryType@4fcd19b3
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration [B -> org.hibernate.type.BinaryType@4fcd19b3
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@17211155
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@17211155
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@17211155
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration image -> org.hibernate.type.ImageType@6fb0d3ed
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration characters -> org.hibernate.type.CharArrayType@24b1d79b
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration char[] -> org.hibernate.type.CharArrayType@24b1d79b
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration [C -> org.hibernate.type.CharArrayType@24b1d79b
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@103f852
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@103f852
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@103f852
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration text -> org.hibernate.type.TextType@6d3af739
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration ntext -> org.hibernate.type.NTextType@71623278
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration blob -> org.hibernate.type.BlobType@2698dc7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2698dc7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@69379752
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration clob -> org.hibernate.type.ClobType@76b10754
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@76b10754
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration nclob -> org.hibernate.type.NClobType@7181ae3f
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7181ae3f
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@32464a14
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1efee8e7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration serializable -> org.hibernate.type.SerializableType@32cf48b7
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration object -> org.hibernate.type.ObjectType@4e41089d
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4e41089d
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@365c30cc
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@701fc37a
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4148db48
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@282003e1
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7fad8c79
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@71a794e5
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@76329302
+2016-06-24 01:29:52 DEBUG BasicTypeRegistry:135 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5e25a92e
+2016-06-24 01:29:53 DEBUG BasicTypeRegistry:135 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@e1de817
+2016-06-24 01:29:53 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@e1de817
+2016-06-24 01:29:53 INFO  BasicTypeRegistry:138 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2f0a87b3
+2016-06-24 01:29:53 TRACE TypeFactory:58 - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@78641d23
+2016-06-24 01:29:54 DEBUG SQL:92 - alter table Cat add constraint FKdmsm4raukpdinn4xweadtg1ib foreign key (id) references Pet
+2016-06-24 01:29:54 DEBUG SQL:92 - alter table Dog add constraint FKga240yraopp6rmjswx5jivv58 foreign key (id) references Pet
+2016-06-24 01:29:54 DEBUG SQL:92 - alter table pet_2_human add constraint FKgmbtduj5xm6gn0rv70jhsetp0 foreign key (pet_id) references Pet
+2016-06-24 01:29:54 DEBUG SQL:92 - select nextval ('hibernate_sequence')
+2016-06-24 01:29:54 DEBUG SQL:92 - select nextval ('hibernate_sequence')
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Breed */ insert into Breed (descr, name, id) values (?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Перс]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [BIGINT] - [-40]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Cat */ insert into Pet (age, breed_id, name, id) values (?, ?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [3]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-40]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [Васька]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [4] as [BIGINT] - [-39]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Cat */ insert into Cat (volume, id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [DOUBLE] - [0.0]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-39]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Cat */ insert into Pet (age, breed_id, name, id) values (?, ?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [5]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-40]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [Мурка]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [4] as [BIGINT] - [-38]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Cat */ insert into Cat (volume, id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [DOUBLE] - [1.0]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-38]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Cat */ insert into Pet (age, breed_id, name, id) values (?, ?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [2]
+2016-06-24 01:29:54 TRACE BasicBinder:53 - binding parameter [2] as [BIGINT] - [null]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [Пушок]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [4] as [BIGINT] - [-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Cat */ insert into Cat (volume, id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:53 - binding parameter [1] as [DOUBLE] - [null]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* from Cat */ select cat0_.id as id1_4_, cat0_1_.age as age2_4_, cat0_1_.breed_id as breed_id4_4_, cat0_1_.name as name3_4_, cat0_.volume as volume1_1_ from Cat cat0_ inner join Pet cat0_1_ on cat0_.id=cat0_1_.id
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-44]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [6]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Рекс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-41]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-38]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-37]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-46]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-44]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-43]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([descr2_0_0_] : [VARCHAR]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Немецкая овчарка]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-42]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-43]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-41]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-40]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-40]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-39]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-38]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-37]
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -45 Васька 3 Перс
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -44 Мурка 5 Перс
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -43 Пушок 2 -
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -42 Рекс 6 Немецкая овчарка
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -42 Рекс 6 Немецкая овчарка
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -41 Мурка 5 Перс
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -40 Пушок 2 -
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -39 Васька 3 Перс
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -38 Мурка 5 Перс
+2016-06-24 01:29:54 INFO  Main:138 - CAT: -37 Пушок 2 -
+2016-06-24 01:29:54 DEBUG SQL:92 - /* from Breed */ select breed0_.id as id1_0_, breed0_.descr as descr2_0_, breed0_.name as name3_0_ from Breed breed0_
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([descr2_0_] : [VARCHAR]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_] : [VARCHAR]) - [Немецкая овчарка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_0_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-46]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-43]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-40]
+2016-06-24 01:29:54 INFO  Main:147 - BREED: -46 Перс
+2016-06-24 01:29:54 DEBUG SQL:92 - select pets0_.breed_id as breed_id4_4_0_, pets0_.id as id1_4_0_, pets0_.id as id1_4_1_, pets0_.age as age2_4_1_, pets0_.breed_id as breed_id4_4_1_, pets0_.name as name3_4_1_, pets0_1_.volume as volume1_1_1_, pets0_2_.trained as trained1_2_1_, case when pets0_1_.id is not null then 1 when pets0_2_.id is not null then 2 when pets0_.id is not null then 0 end as clazz_1_ from Pet pets0_ left outer join Cat pets0_1_ on pets0_.id=pets0_1_.id left outer join Dog pets0_2_ on pets0_.id=pets0_2_.id where pets0_.breed_id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_1_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_1_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_1_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_1_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-44]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_1_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_1_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_1_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_1_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-44]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-44]
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -44 Мурка 5
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -45 Васька 3
+2016-06-24 01:29:54 INFO  Main:147 - BREED: -45 Немецкая овчарка
+2016-06-24 01:29:54 DEBUG SQL:92 - select pets0_.breed_id as breed_id4_4_0_, pets0_.id as id1_4_0_, pets0_.id as id1_4_1_, pets0_.age as age2_4_1_, pets0_.breed_id as breed_id4_4_1_, pets0_.name as name3_4_1_, pets0_1_.volume as volume1_1_1_, pets0_2_.trained as trained1_2_1_, case when pets0_1_.id is not null then 1 when pets0_2_.id is not null then 2 when pets0_.id is not null then 0 end as clazz_1_ from Pet pets0_ left outer join Cat pets0_1_ on pets0_.id=pets0_1_.id left outer join Dog pets0_2_ on pets0_.id=pets0_2_.id where pets0_.breed_id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_1_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_1_] : [INTEGER]) - [6]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_1_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_1_] : [VARCHAR]) - [Рекс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-42]
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -42 Рекс 6
+2016-06-24 01:29:54 INFO  Main:147 - BREED: -43 Перс
+2016-06-24 01:29:54 DEBUG SQL:92 - select pets0_.breed_id as breed_id4_4_0_, pets0_.id as id1_4_0_, pets0_.id as id1_4_1_, pets0_.age as age2_4_1_, pets0_.breed_id as breed_id4_4_1_, pets0_.name as name3_4_1_, pets0_1_.volume as volume1_1_1_, pets0_2_.trained as trained1_2_1_, case when pets0_1_.id is not null then 1 when pets0_2_.id is not null then 2 when pets0_.id is not null then 0 end as clazz_1_ from Pet pets0_ left outer join Cat pets0_1_ on pets0_.id=pets0_1_.id left outer join Dog pets0_2_ on pets0_.id=pets0_2_.id where pets0_.breed_id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-41]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_1_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_1_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_1_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_1_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-41]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-41]
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -41 Мурка 5
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -42 Рекс 6
+2016-06-24 01:29:54 INFO  Main:147 - BREED: -40 Перс
+2016-06-24 01:29:54 DEBUG SQL:92 - select pets0_.breed_id as breed_id4_4_0_, pets0_.id as id1_4_0_, pets0_.id as id1_4_1_, pets0_.age as age2_4_1_, pets0_.breed_id as breed_id4_4_1_, pets0_.name as name3_4_1_, pets0_1_.volume as volume1_1_1_, pets0_2_.trained as trained1_2_1_, case when pets0_1_.id is not null then 1 when pets0_2_.id is not null then 2 when pets0_.id is not null then 0 end as clazz_1_ from Pet pets0_ left outer join Cat pets0_1_ on pets0_.id=pets0_1_.id left outer join Dog pets0_2_ on pets0_.id=pets0_2_.id where pets0_.breed_id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_1_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_1_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_1_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_1_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_1_] : [BIGINT]) - [-38]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_1_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_1_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_1_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_1_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_0_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_0_] : [BIGINT]) - [-38]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-39]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-38]
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -39 Васька 3
+2016-06-24 01:29:54 INFO  Main:149 -   CAT: -38 Мурка 5
+2016-06-24 01:29:54 DEBUG SQL:92 - /* from Cat */ select cat0_.id as id1_4_, cat0_1_.age as age2_4_, cat0_1_.breed_id as breed_id4_4_, cat0_1_.name as name3_4_, cat0_.volume as volume1_1_ from Cat cat0_ inner join Pet cat0_1_ on cat0_.id=cat0_1_.id
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-44]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [6]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Рекс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-41]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-38]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-37]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-46]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-44]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-43]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([descr2_0_0_] : [VARCHAR]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Немецкая овчарка]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-42]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-43]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-41]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-40]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-40]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-39]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-38]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - select nextval ('hibernate_sequence')
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Human */ insert into Human (dob, name, id) values (?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [TIMESTAMP] - [Tue Jan 23 00:06:00 MSK 1979]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Иванов Иван Иванович]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [BIGINT] - [-38]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Human */ insert into Human (dob, name, id) values (?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [TIMESTAMP] - [Thu Jan 01 00:01:00 MSK 1970]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Джон Смитт]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [BIGINT] - [-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-40]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-45]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-42]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-39]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-38]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-43]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-44]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-38]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-41]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-40]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-45]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-42]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-39]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-38]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-43]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-44]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Human.Pets */ insert into pet_2_human (human_id, pet_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-37]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-41]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* from Human where name like 'Иванов%' */ select human0_.id as id1_3_, human0_.dob as dob2_3_, human0_.name as name3_3_ from Human human0_ where human0_.name like 'Иванов%'
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_3_] : [BIGINT]) - [-44]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([dob2_3_] : [TIMESTAMP]) - [1979-01-23 00:06:00.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_3_] : [VARCHAR]) - [Иванов Иван Иванович]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_3_] : [BIGINT]) - [-41]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([dob2_3_] : [TIMESTAMP]) - [1979-01-23 00:06:00.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_3_] : [VARCHAR]) - [Иванов Иван Иванович]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_3_] : [BIGINT]) - [-38]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([dob2_3_] : [TIMESTAMP]) - [1979-01-23 00:06:00.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_3_] : [VARCHAR]) - [Иванов Иван Иванович]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Human.Pets#-44]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Human.Pets#-41]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Human.Pets#-38]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Breed */ insert into Breed (descr, name, id) values (?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:53 - binding parameter [1] as [VARCHAR] - [null]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Немецкая овчарка]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [BIGINT] - [-39]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Dog */ insert into Pet (age, breed_id, name, id) values (?, ?, ?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [6]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-39]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [Рекс]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [4] as [BIGINT] - [-36]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert hiber.Dog */ insert into Dog (trained, id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BOOLEAN] - [true]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-36]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* insert collection row hiber.Pet.humans */ insert into pet_2_human (pet_id, human_id) values (?, ?)
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-36]
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [2] as [BIGINT] - [-44]
+2016-06-24 01:29:54 DEBUG SQL:92 - /* from Pet */ select pet0_.id as id1_4_, pet0_.age as age2_4_, pet0_.breed_id as breed_id4_4_, pet0_.name as name3_4_, pet0_1_.volume as volume1_1_, pet0_2_.trained as trained1_2_, case when pet0_1_.id is not null then 1 when pet0_2_.id is not null then 2 when pet0_.id is not null then 0 end as clazz_ from Pet pet0_ left outer join Cat pet0_1_ on pet0_.id=pet0_1_.id left outer join Dog pet0_2_ on pet0_.id=pet0_2_.id
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [0]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([age2_4_] : [INTEGER]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [vasya]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [0]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([age2_4_] : [INTEGER]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Bobique]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-44]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [6]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Рекс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-42]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-41]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [3]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Васька]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [0.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-38]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [5]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Мурка]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([volume1_1_] : [DOUBLE]) - [1.0]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-37]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [1]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([breed_id4_4_] : [BIGINT]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Пушок]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([volume1_1_] : [DOUBLE]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([id1_4_] : [BIGINT]) - [-36]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([clazz_] : [INTEGER]) - [2]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([age2_4_] : [INTEGER]) - [6]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([breed_id4_4_] : [BIGINT]) - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_4_] : [VARCHAR]) - [Рекс]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([trained1_2_] : [BOOLEAN]) - [true]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#0]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#2]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-46]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-46]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-44]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-43]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-45]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([descr2_0_0_] : [VARCHAR]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Немецкая овчарка]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-45]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-42]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-43]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-43]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-41]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-40]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-40]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([descr2_0_0_] : [VARCHAR]) - [Красивый кот]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Перс]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-40]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-39]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-38]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-37]
+2016-06-24 01:29:54 DEBUG SQL:92 - select breed0_.id as id1_0_0_, breed0_.descr as descr2_0_0_, breed0_.name as name3_0_0_ from Breed breed0_ where breed0_.id=?
+2016-06-24 01:29:54 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [-39]
+2016-06-24 01:29:54 TRACE BasicExtractor:51 - extracted value ([descr2_0_0_] : [VARCHAR]) - [null]
+2016-06-24 01:29:54 TRACE BasicExtractor:61 - extracted value ([name3_0_0_] : [VARCHAR]) - [Немецкая овчарка]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Breed.pets#-39]
+2016-06-24 01:29:54 TRACE CollectionType:756 - Created collection wrapper: [hiber.Pet.humans#-36]
+2016-06-24 01:29:54 INFO  Main:190 - PET: 0 vasya null // class hiber.Pet
+2016-06-24 01:29:54 INFO  Main:190 - PET: 2 Bobique null // class hiber.Pet
+2016-06-24 01:29:54 INFO  Main:190 - PET: -45 Васька 3 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 0.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -44 Мурка 5 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 1.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -43 Пушок 2 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: null
+2016-06-24 01:29:54 INFO  Main:190 - PET: -42 Рекс 6 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 0.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -42 Рекс 6 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 0.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -41 Мурка 5 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 1.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -40 Пушок 2 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: null
+2016-06-24 01:29:54 INFO  Main:190 - PET: -39 Васька 3 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 0.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -38 Мурка 5 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: 1.0
+2016-06-24 01:29:54 INFO  Main:190 - PET: -37 Пушок 2 // class hiber.Cat
+2016-06-24 01:29:54 INFO  Main:193 -   CAT: null
+2016-06-24 01:29:54 INFO  Main:190 - PET: -36 Рекс 6 // class hiber.Dog
+2016-06-24 01:29:54 INFO  Main:197 -   DOG: true
+2016-06-24 01:29:54 INFO  Main:202 - Done
