@@ -71,7 +71,6 @@ public class QueriesModifier {
                 result = result.replaceFirst("\\?", "@int" + min + "-" + max);
 
             } else{
-                //// TODO: 05.06.16
                 result = result.replaceFirst("\\?","@str8-32");
             }
         }

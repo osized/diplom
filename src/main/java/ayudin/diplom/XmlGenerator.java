@@ -18,8 +18,7 @@ public class XmlGenerator {
     //Уточнить
     private String queryName = "Query from Hibernate log";
     private String queryTypeConn = "1";
-    //todo: homepath
-    private String queryNameConn = "C:\\Users\\Oleg\\connection.ini";
+    private String queryNameConn = System.getProperty("user.home") + System.getProperty("file.separator") + "connection.ini";
 
 
     public String getXml(List<String> sqlStatements){
